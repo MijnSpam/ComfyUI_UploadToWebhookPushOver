@@ -1,0 +1,15 @@
+[project]
+name = "UploadToWebhookPushOver"
+description = "Send generated image to PushOver API webhook with optional parameters such as prompt-id and metadata payload."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["numpy", "requests", "Pillow"]
+
+[project.urls]
+Repository = "https://github.com/MijnSpam/ComfyUI_UploadToWebhookPushOver"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "MijnSpam"
+DisplayName = "ComfyUI_UploadToPushOver"
+
