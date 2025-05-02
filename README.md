@@ -6,7 +6,7 @@ Thanks to Jerryswap UploadToWebhook customnode which I could use as base code fo
 
 ![ComfyUI Node](node1.png)
 
-A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allows you to **send generated image(s) ** directly to Pushover, you can also choose only to get a notifycation. Videos aren't supported.
+A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allows you to _send generated image(s)_  directly to Pushover, you can also choose only to get a notifycation. Videos aren't supported.
 
 ---
 
@@ -42,7 +42,7 @@ This part can fail with pip env but just check if it runs without doing the pack
 ## 🧩 How to Use
 
 In Pushover.net create an application token and paste this into your Token field.
-Optional, edit default value in __init__.py (line 18)
+Optional, edit default value in __init__.py 
 Optional: Create a delivery group if you want to be flexible in notifying devices. _(then you only need to edit in pushover instead of changing userkeys)_
 In User field, enter specific device key **or** add group key.
 
@@ -61,8 +61,6 @@ In ComfyUI:
 ![ComfyUI Node](node1.png)
 
 ---
-
-
 
 ## 📁 Folder Structure
 
