@@ -29,7 +29,7 @@ git clone https://github.com/MijnSpam/ComfyUI_UploadToWebhookPushOver.git
 2. Install dependencies:
 
 ```
-cd ComfyUI_UploadToWebHook
+cd ComfyUI_UploadToWebhookPushOver
 bash install.sh
 This part can fail with pip env but just check if it runs without doing the packages install.
 ```
