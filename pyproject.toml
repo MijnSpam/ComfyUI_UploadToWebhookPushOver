@@ -1,6 +1,6 @@
 [project]
 name = "UploadToWebhookPushOver"
-description = "Send generated image to PushOver API webhook with optional parameters such as prompt-id and metadata payload."
+description = "Send generated image to PushOver API webhook choose for only notification or add the image result as well."
 version = "1.0.0"
 license = {file = "LICENSE"}
 dependencies = ["numpy", "requests", "Pillow"]
