@@ -4,7 +4,7 @@ Thanks to Jerryswap UploadToWebhook customnode which I could use as base code fo
 
 
 
-![ComfyUI Node](node1.png)
+![ComfyUI Node](images/image-connect.png)
 
 A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allows you to _send generated image(s)_  directly to Pushover, you can also choose only to get a notifycation. Videos aren't supported.
 
