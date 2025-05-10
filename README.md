@@ -17,7 +17,7 @@ A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allo
 
 ---
 
-## 🔧 Installation
+## 🔧 Installation (for updating from v1.0.x to v1.2.x read the update.md file.)
 
 1. Clone or download this repo into your `ComfyUI/custom_nodes` directory:
 

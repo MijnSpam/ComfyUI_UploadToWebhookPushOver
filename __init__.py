@@ -37,7 +37,6 @@ class UploadToPushOver:
                 "title": ("STRING", {"default": "Comfy push title"}),
                 "priority": ("INT", {"default": 0, "lowest": -2, "max": 2}),
                 "sound":(["pushover", "bike", "bugle", "cashregister", "classical", "cosmic", "falling", "gamelan", "incoming", "intermission", "magic", "mechanical", "pianobar", "siren", "spacealarm", "tugboat", "alien", "climb", "persistent", "echo", "updown", "vibrate", "none"],),
-               # "attachment_type":("STRING", {"default": "image/png"}),
                 "attach_image": ("BOOLEAN", {"default": True}),
                 "prompt_id": ("STRING", {"default": "Will be your pushover message, when empty: Workflow ready", "multiline": True})
             },
@@ -87,16 +86,15 @@ class UploadToPushOver:
             parsed_data["message"] = "Workflow ready" # message can't be empty, pushover wont accept it.
         ## if stored credentials are used load from file else use input fields.
         if use_stored_credentials:
-            env_file_path = './.env'
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            env_file_path = os.path.join(current_dir, '.env')
             apptoken = load_env_variable(env_file_path, 'apptoken')
             usertoken = load_env_variable(env_file_path, 'usertoken')
             parsed_data["token"] = apptoken
             parsed_data["user"] = usertoken
-            print(f"env loading: {apptoken}")
         else:
-           parsed_data["token"] = token
-           parsed_data["user"] = user
-
+            parsed_data["token"] = token
+            parsed_data["user"] = user
         parsed_data["title"] = title
         parsed_data["priority"] = priority
         parsed_data["sound"] = sound
