@@ -1,4 +1,4 @@
-## 🔧 Úpdate v1.0.x to v1.2.0
+## 🔧 Update v1.0.x to v1.2.0
 
 1. In the custom nodes manager
    find your installed ComfyUI_UploadToPushOver node.
