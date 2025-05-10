@@ -1,8 +1,8 @@
 [project]
 name = "UploadToWebhookPushOver"
-description = "Send generated image to PushOver API webhook choose for only notification or add the image result as well."
+description = "Send generated image to PushOver API webhook choose for only notification or add the image result as well. It can connect to anything if you just want a notification somewhere in your workflow"
 version = "1.2.0"
-license = {file = "LICENSE"}
+license = {"LICENSE"}
 dependencies = ["numpy", "requests", "Pillow"]
 
 [project.urls]
@@ -12,4 +12,4 @@ Repository = "https://github.com/MijnSpam/ComfyUI_UploadToWebhookPushOver"
 [tool.comfy]
 PublisherId = "MijnSpam"
 DisplayName = "ComfyUI_UploadToPushOver"
-
+Icon = ""
