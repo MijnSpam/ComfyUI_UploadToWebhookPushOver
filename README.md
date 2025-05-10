@@ -63,7 +63,7 @@ In ComfyUI:
 
 ## 🖼️ UI Example
 
-![ComfyUI Node](images/node1.png)
+![ComfyUI Node](images/image-connect.png)
 ![Video Node](images/videonode.png)
 
 ---
