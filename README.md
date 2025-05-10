@@ -48,7 +48,7 @@ In User field, enter specific device key **or** add group key.
 
 In ComfyUI:
 
-1. Drag your image output (e.g., from `VAE Decode`) to the **Send To Pushover** node.
+1. Drag any output (e.g., from `VAE Decode`) to the **Send To Pushover** node >> connect_anything
 ![ComfyUI Node](images/image-connect.png)
 2. Configure:
     - `connect_anything` : connect any output (mandatory to work)
