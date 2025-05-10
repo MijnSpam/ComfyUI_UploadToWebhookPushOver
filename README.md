@@ -48,17 +48,23 @@ In User field, enter specific device key **or** add group key.
 
 In ComfyUI:
 
-1. Drag your image output (e.g., from `VAE Decode`) to the **Send To Http Webhook** node.
-![ComfyUI Node](node2.png)
+1. Drag your image output (e.g., from `VAE Decode`) to the **Send To Pushover** node.
+![ComfyUI Node](images/image-connect.png)
 2. Configure:
+    - `connect_anything` : connect any output (mandatory to work)
     - `webhook_url`: default is correct.
-    - `token`: the pushover app token
+    - `token`: the pushover app token (or use stored credentials option, see step 3)
     - `user`: Your user OR group key.
+    - `image`: if you want an image in your pushover, connect this node and switch on attach_image
+3. Optional (since version 1.2)
+   create an .env in the same folder as this custom-node, see example folder but rename to '.env'
+   in the node select, 'use stored credentials', any credentials in the node fields will be ignored **even when you enter them!**
 ---
 
 ## 🖼️ UI Example
 
-![ComfyUI Node](node1.png)
+![ComfyUI Node](images/node1.png)
+![Video Node](images/videonode.png)
 
 ---
 
@@ -69,6 +75,8 @@ ComfyUI_UploadToWebHookPushOver/
 ├── __init__.py
 ├── requirements.txt
 └── install.sh
+└── pyproject.toml
+└── .env (optional file see how to use step 3)
 ```
 
 ---
