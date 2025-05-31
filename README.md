@@ -92,3 +92,10 @@ Feel free to fork and create a PR.
 
 This project is licensed under the MIT License.  
 See [LICENSE](./LICENSE) for details.
+
+## Other custom nodes (search for "KB comfy" in manager)
+- Swap and Scale
+
+## Changelog
+
+1.2.2 Trying to fix custom-node update issue.
